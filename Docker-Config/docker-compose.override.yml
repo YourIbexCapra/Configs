@@ -1,0 +1,32 @@
+version: "3"
+services:
+
+  {name}:
+    image: 'mongo:latest'
+    restart: unless-stopped
+    volumes:
+      - db-data:/data/db
+      - mongo-config:/data/configdb
+    ports:
+      - "127.0.0.1:27017:27017"
+
+  {name}:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:${PORT}:${PORT}"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    depends_on:
+      - {name}
+
+volumes:
+  db-data:
+    driver: local
+  mongo-config:
+    driver: local

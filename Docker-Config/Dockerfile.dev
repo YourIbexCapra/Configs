@@ -1,0 +1,14 @@
+FROM node:18-alpine
+
+ENV NODE_ENV developement
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm cache clean --force
+RUN npm install
+
+COPY ./app ./
+
+CMD ["npm", "run", "start:dev"]

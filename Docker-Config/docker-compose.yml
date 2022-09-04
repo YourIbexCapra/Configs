@@ -1,0 +1,8 @@
+version: "3"
+services:
+
+  {name}:
+    build: .
+    restart: always
+    environment:
+      - MONGO_URL=${MONGO_URL}

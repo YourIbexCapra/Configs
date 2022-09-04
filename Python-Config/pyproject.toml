@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "{name}"
+version = "0.0.1"
+description = "{description}"
+authors = ["First Last"]
+license = "MIT"
+readme = "README.md"
+homepage = "{url}"
+repository = "{url}"
+documentation = "{url}#readme"
+keywords = ["keywords"]
+classifiers = [
+    "Topic :: System :: Networking",
+]
+packages = [
+    { include = "{package}" },
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "{url}/issues"
+
+[tool.poetry.build]
+generate-setup-file = false
+
+[tool.poetry.scripts]
+start = "{name}.cli:bootstrap"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+termcolor = "^1.1.0"
+progress = "^1.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''

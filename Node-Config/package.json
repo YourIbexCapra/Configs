@@ -1,0 +1,39 @@
+{
+    "name": "{name}",
+    "version": "1.0.0",
+    "description": "{description}",
+    "private": true,
+    "engines": {
+      "node": "18.x",
+      "npm": "8.x"
+    },
+    "directories": {
+      "doc": "docs"
+    },
+    "main": "app/bin/www",
+    "scripts": {
+      "test": "mocha --timeout 10000",
+      "lint": "eslint --ignore-path .eslintignore --ext .js .",
+      "start:dev": "nodemon -L -r dotenv/config .",
+      "start:prod": "node -r dotenv/config .",
+      "heroku-postbuild": "npm run start:prod"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+{url_git}"
+    },
+    "keywords": [
+      "API"
+    ],
+    "author": "Kleo Hasani",
+    "license": "MIT",
+    "bugs": {
+      "url": "{url}/{name}/issues"
+    },
+    "homepage": "{url}/{name}/#readme",
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+  }
+  
