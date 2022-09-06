@@ -14,8 +14,8 @@ My configs.
 
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue)](./package.json)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE.md)
-[![Build](https://github.com/YourIbexCapra/configs/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/YourIbexCapra/configs/actions/workflows/main.yml)
-![API](https://img.shields.io/website?down_color=red&down_message=Down&label=API&style=flat&up_color=green&up_message=Live&url=https%3A%2F%2Fexample.com%2F)
+<!-- [![Build](https://github.com/YourIbexCapra/configs/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/YourIbexCapra/configs/actions/workflows/main.yml) -->
+<!-- ![API](https://img.shields.io/website?down_color=red&down_message=Down&label=API&style=flat&up_color=green&up_message=Live&url=https%3A%2F%2Fexample.com%2F) -->
 
 ---
 
