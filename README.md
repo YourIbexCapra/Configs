@@ -2,11 +2,11 @@
   <img src="https://media.giphy.com/media/hjZ3T2Eso1wJ8QWoCl/giphy.gif" width="200"/>
 </div>
 
-# {name}
+# Configs
 
 ## Description
 
-{Description}
+My configs.
 
 <!-- ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/YourIbexCapra/configs/main?style=flat) -->
 
@@ -45,7 +45,7 @@
   - ### Clone
 
   ```shell
-  git clone {url_git}
+  git clone https://github.com/YourIbexCapra/Configs.git
   ```
 
   - ### ENV
