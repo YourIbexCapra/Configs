@@ -94,8 +94,6 @@ For security-related questions check our [security policy](./SECURITY.md).
 npm run test
 ```
 
----
-
 <div align="center">
 
 ### &#129514; [Unit Tests](docs/UNIT_TESTS.md) &#128221;
