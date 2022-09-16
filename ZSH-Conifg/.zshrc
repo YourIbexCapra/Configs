@@ -24,7 +24,7 @@ if [ "$TERM" = "linux" ]; then
 	clear
 fi
 
-export ZSH="/home/{user}/.oh-my-zsh"
+export ZSH="/{user}/.oh-my-zsh"
 
 ZSH_THEME="YourIbexCapra"
 
