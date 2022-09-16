@@ -26,5 +26,5 @@ cp ./YourIbexCapra.zsh-theme ~/.oh-my-zsh/themes
 ```shell
 cd ~/.oh-my-zsh/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/plugin
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/plugin/zsh-syntax-highlighting
 ```
